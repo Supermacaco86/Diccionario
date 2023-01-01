@@ -1,13 +1,16 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    box-sizing: Border-Box;
 }
-*:not(i) {
-    font-family: "Poppins", sans-serif;
+*:not(I) {
+    font-family: "poppins", sans-serif;
 }
 body {
-    background-color: #ffffff;
+    background-color: #Ae9cff;
+}
+.container {
+    background-color: #Ffffff;
     width: 90vmin;
     position: absolute;
     transform: translate(-50%, -50%);
@@ -27,16 +30,16 @@ body {
     width: 70%;
     border: none;
     outline: none;
-    border-bottom: 3px solid #ae9cff;
+    border-bottom: 3px solid #Ae9cff;
     font-size: 16px;
 }
 .search-box button {
     padding: 15px 0;
     width: 25%;
-    background-color: #ae9cff;
+    background-color: #Ae9cff;
     border: none;
     outline: none;
-    color: #ffffff;
+    color: #Ffffff;
     border-radius: 5px;
 }
 .result {
@@ -53,15 +56,15 @@ body {
 }
 .result button {
     background-color: transparent;
-    color: #ae9cff;
+    color: #Ae9cff;
     border: none;
     outline: none;
-    font-size: 14px;
+    font-size: 18px;
 }
 .result .details {
     display: flex;
     gap: 10px;
-    color: #b3b6d4;
+    color: #B3b6d4;
     margin: 5px 0 20px 0;
     font-size: 14px;
 }
@@ -71,7 +74,8 @@ body {
 .word-example {
     color: #575a7b;
     font-style: italic;
-    border-left: 20px;
+    border-left: 5px solid #Ae9cff;
+    padding-left: 20px;
     margin-top: 30px;
 }
 .error {
