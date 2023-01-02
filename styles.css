@@ -41,7 +41,11 @@ body {
     outline: none;
     color: #Ffffff;
     border-radius: 5px;
+    
 }
+.search-box button:hover {
+    background-color: rgb(187, 98, 235);
+  }
 .result {
     position: relative;
 }
