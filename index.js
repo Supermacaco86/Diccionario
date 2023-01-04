@@ -11,21 +11,17 @@ btn.addEventListener("click", () => {
             console.log(data);
             result.innerHTML = `
             <div class="word">
-                    <h3>${inpWord}</h3>
-                    <button onClick="playsound()">
-                        <i class="fas fa-volume-up"></i>
-                    </button>
-                </div>
-                <div class="details">
-                    <p>${data[0].meanings[0].partOfSpeech}</P>
-                    <p>/${data[0].phonetic}/</P>
-                </div>
-                <p class="word-weaning">
-                   ${data[0].meanings[0].definitions[0].definition}
-                </p>
-                <p class="word-example">
-                    ${data[0].meanings[0].definitions[0].example || ""}
-                </p>`;
+                <h3>${inpWord}</h3>
+                <button onClick="playsound()">
+                    <i class="fas fa-volume-up"></i>
+                </button>
+            </div>
+            <div class="details">
+                <p>${data[0].meanings[0].partOfSpeech}</P>
+                <p>/${data[0].phonetic}/</P>
+            </div>
+            <p class="word-weaning"> ${data[0].meanings[0].definitions[0].definition}</p>
+            <p class="word-example">${data[0].meanings[0].definitions[0].example || ""}</p>`;
             sound.setAttribute("src", `${data[0].phonetics[0].audio}`);
             console.log(sound)
         })
